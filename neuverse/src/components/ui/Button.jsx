@@ -11,5 +11,11 @@ export default function Button(props) {
                 Learn More
             </button>
         )
+    }else if(props.type === "choose-plan"){
+        return (
+            <button className="bg-green-500 text-white rounded-full w-full">
+                {props.children}
+            </button>
+        )
     }
 }
